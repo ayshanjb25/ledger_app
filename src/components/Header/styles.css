@@ -1,4 +1,5 @@
 .navbar{
+    /* background: linear-gradient(to right, #002C54,#FDF6F6 , #C5001A); */
     background-color: var(--theme);
     padding: 0.5rem 1.5rem;
     position: sticky;

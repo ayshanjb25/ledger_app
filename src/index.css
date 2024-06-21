@@ -20,6 +20,7 @@ input {
   font-family: "Montserrat", sans-serif;
 }
 
+.input-wrapper input,
 .custom-input{
   border: 0px;
   border-bottom: 1px solid #000;
@@ -31,12 +32,98 @@ input {
   margin-top: -1rem !important;
 }
 
-.custom-input{
+.input-wrapper input::placeholder,
+.custom-input::placeholder{
   color: rgba(0,0,0,0.5);
 }
 
-.custom-input{
+.input-wrapper input:focus,
+.custom-input:focus{
   outline: none;
   opacity: 1;
   transition: all 0.3s;
+}
+
+.input-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  box-shadow: 0px 0px 30px 8px rgba(227, 227, 227, 0.75);
+  border-radius: 0.5rem;
+  padding: 0rem 0.5rem;
+}
+
+.input-flex input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 0;
+}
+
+.input-flex input:focus {
+  outline: none;
+}
+
+.btn {
+  color: var(--theme);
+  text-align: center;
+  width: 95%;
+  margin: 0.5rem 0rem;
+  padding: 0.5rem !important;
+  background-color: #fff;
+  border: 1px solid var(--theme);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: auto !important;
+}
+
+.btn:hover {
+  background-color: var(--theme);
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.btn-blue {
+  background-color: var(--theme);
+  color: #fff;
+}
+
+.btn-blue:hover {
+  background-color: #fff !important;
+  color: var(--theme) !important;
+  transition: all 0.3s;
+}
+.btn-red{
+  background-color: red;
+  color:#fff;
+}
+
+.btn-red:hover{
+  background-color: #fff !important;
+  color: red !important;
+  transition: all 0.3s;
+}
+.select-input {
+  width: 30%;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 30px 8px rgba(227, 227, 227, 0.75);
+  border-radius: 0.5rem !important;
+  padding: 0.2rem 0.5rem;
+}
+
+.select-input-2 > div {
+  border-width: 0px !important;
+  border-bottom-width: 1px !important;
+  border-radius: 0 !important;
+  border-color: #000 !important;
+}
+
+.select-input > div {
+  border: 0px solid #fff !important;
 }

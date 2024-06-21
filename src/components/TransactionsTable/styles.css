@@ -32,12 +32,12 @@
 }
 
 .btn-red{
-    background-color: red;
+    background-color: rgb(189, 38, 38);
     color:#fff;
 }
 
 .btn-red:hover{
     background-color: #fff !important;
-    color: red !important;
+    color: rgb(189, 38, 38) !important;
     transition: all 0.3s;
 }
